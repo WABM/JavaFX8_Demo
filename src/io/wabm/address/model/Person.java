@@ -1,4 +1,4 @@
-package sample.io.wabm.address.model;
+package io.wabm.address.model;
 
 import javafx.beans.property.*;
 
