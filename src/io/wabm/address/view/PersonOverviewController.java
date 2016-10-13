@@ -33,6 +33,8 @@ public class PersonOverviewController {
     private Label birthdayLabel;
 
     @FXML
+    private Button editButton;
+    @FXML
     private Button deleteButton;
 
     // Reference to the main application.
@@ -78,8 +80,9 @@ public class PersonOverviewController {
             cityLabel.setText(person.getCity());
             birthdayLabel.setText(DateUtil.format(person.getBirthday()));
 
-            // Enable delete button
+            // Enable delete & edit button
             deleteButton.setDisable(false);
+            editButton.setDisable(false);
         } else {
             // Person is null, remove all the text.
             firstNameLabel.setText("");
@@ -89,8 +92,9 @@ public class PersonOverviewController {
             cityLabel.setText("");
             birthdayLabel.setText("");
 
-            // Disable delete button
+            // Disable delete & edit button
             deleteButton.setDisable(true);
+            editButton.setDisable(true);
         }
     }
 

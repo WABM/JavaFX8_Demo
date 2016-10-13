@@ -59,7 +59,7 @@
                   <HBox layoutX="219.0" layoutY="357.0" spacing="8.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
                      <children>
                         <Button layoutX="35.0" layoutY="200.0" mnemonicParsing="false" onAction="#newButtonPressed" text="New…" />
-                        <Button layoutX="104.0" layoutY="200.0" mnemonicParsing="false" onAction="#editButtonClicked" text="Edit…" />
+                        <Button fx:id="editButton" layoutX="104.0" layoutY="200.0" mnemonicParsing="false" onAction="#editButtonClicked" text="Edit…" />
                         <Button fx:id="deleteButton" layoutX="172.0" layoutY="200.0" mnemonicParsing="false" onAction="#deleteButtonPressed" text="Delete" />
                      </children>
                   </HBox>
